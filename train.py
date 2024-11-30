@@ -30,7 +30,7 @@ numeric_features = ['WindSpeed(m/s)', 'Pressure(hpa)', 'Temperature(°C)', 'Humi
 scaler = StandardScaler()
 data[numeric_features] = scaler.fit_transform(data[numeric_features])
 # Save the scaler for later use
-scaler_path = r'D:\PowerStation\scalerMAE11.pkl'
+scaler_path = 'scalerMAE11.pkl'
 joblib.dump(scaler, scaler_path)
 
 # Define features and target
